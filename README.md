@@ -22,7 +22,8 @@
 
 ---
 
-### Homepage - similar to zomato
+### Homepage - similar to zomato --![image](https://github.com/user-attachments/assets/ad7dab91-4b1d-4061-818a-d57e8953a029)
+
 ---
 
 ## 📦 Installation & Setup
