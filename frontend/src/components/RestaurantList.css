@@ -1,0 +1,78 @@
+/* src/components/RestaurantList.css */
+.restaurant-list-container {
+    padding: 20px;
+  }
+  
+  .restaurant-grid {
+    display: grid;
+    margin: 0px 50px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .restaurant-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .restaurant-card:hover {
+   background-color: rgb(255, 233, 205);
+    transform: scale(1.05);
+  }
+  
+  .restaurant-card img {
+    width: 70%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .restaurant-info {
+    padding: 10px;
+  }
+  
+  .restaurant-info h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .restaurant-info p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Allows wrapping if there are many page numbers */
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .pagination button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  .pagination button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Optional styles for previous and next buttons */
+  .pagination .prev-button,
+  .pagination .next-button {
+    font-size: 16px;
+  }
+  
+  

@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  backend:
+    image: nagothigunesh/backend-image:latest
+    build:
+      context: ./backend
+    ports:
+      - "5000:5000"
+    depends_on:
+      - memcached
+    environment:
+      - MEMCACHED_HOST=memcached
+      - MEMCACHED_PORT=11211
+      - MONGODB_URI=mongodb+srv://nagothigunesh:guna9292@zomatodb.ak0iarc.mongodb.net/?retryWrites=true&w=majority&appName=zomatodb
+      - DB_NAME=zomato_db
+  memcached:
+    image: memcached:latest
+    ports:
+      - "11211:11211"
+
+  frontend:
+    image: nagothigunesh/frontend-image:latest
+    build:
+      context: ./frontend
+    ports:
+      - "3000:3000"
+#docker-compose up --build

@@ -1,0 +1,283 @@
+.app {
+  font-family: Arial, sans-serif;
+}
+
+
+.app-header {
+  position: relative;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.header-title-container {
+  position: relative;
+  z-index: 2; /* Ensure it's above the background text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Add some padding to avoid overlap */
+}
+
+
+.zomato-logo {
+  height: 60px;
+  margin-right: 10px;
+}
+.header-title {
+  font-size: 48px;
+  margin: 0;
+  color: #ffffff; /* White text for high contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for better visibility */
+}
+
+
+.header-subtitle {
+  font-size: 24px;
+  margin: 24px 10px; /* Increase the margin to create space below */
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Optional: Adds subtle shadow for better readability */
+}
+
+.search-bar {
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-bar input {
+  width: 400px;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+}
+.search-bar input[type="text"] {
+  width: calc(100% - 120px);
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.search-bar input:focus {
+  border-color: #ff5722; /* Highlight border color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.search-bar input[type="text"]:focus {
+  border-color: #ff2d22;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0 20px;
+  border: none;
+  background-color: #ff5722;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.search-bar button:hover {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0 20px;
+  border: none;
+  background-color: #ffccbc;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.search-bar button:hover {
+  background-color: #e64a19; /* Darker shade on hover */
+}
+
+.restaurant-list-container {
+  padding: 20px;
+}
+
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.restaurant-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.restaurant-card:hover {
+  transform: scale(1.05);
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.restaurant-info {
+  padding: 10px;
+}
+
+.restaurant-info h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.restaurant-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.background-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.8); /* Adjust color and transparency */
+  z-index: 1; /* Make sure it's behind other content */
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Adjust font family */
+}
+
+.branding {
+  font-family: 'Arial', sans-serif; /* Use a font similar to Zomato */
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333; /* Adjust color to dark gray or any desired color */
+  text-align: center;
+  margin: 20px 0;
+}
+.search-bar {
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  margin-left: auto;
+  margin-right: auto; /* Center align */
+}
+
+.search-bar input[type="text"] {
+  width: calc(100% - 120px); /* Adjust width to account for the button */
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ddd; /* Light gray border */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  outline: none;
+}
+
+.search-bar input[type="text"]:focus {
+  border-color: #ff5722; /* Highlight border color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0 20px;
+  border: none;
+  background-color: #ff5722; /* Button color */
+  color: white;
+  border-radius: 0 5px 5px 0; /* Rounded corners on the right */
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #e64a19; /* Darker shade on hover */
+}
+
+.filter-bar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-bar label {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold; /* Make label bold for emphasis */
+  color: white; /* White color to match the subtitle */
+}
+
+.filter-bar select {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: white; /* White background for the select dropdown */
+  color: #333; /* Dark text color for contrast */
+  outline: none;
+  cursor: pointer;
+}
+
+.filter-bar select:focus {
+  border-color: #ff5722; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}

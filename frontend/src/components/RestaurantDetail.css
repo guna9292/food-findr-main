@@ -1,0 +1,105 @@
+/* src/components/RestaurantDetail.css */
+
+.restaurant-detail-card {
+  background-color: #f7f5f4e1;
+  border: 1px solid #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.restaurant-name {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: #333;
+}
+
+.restaurant-detail-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.restaurant-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-info p {
+  font-size: 1em;
+  margin: 10px 0;
+  color: #555;
+}
+
+.restaurant-info p strong {
+  color: #333;
+}
+
+.restaurant-rating {
+  font-weight: bold;
+}
+#card-name {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+}
+.restaurant-detail-container {
+  padding: 20px;
+}
+
+.restaurant-detail {
+  max-width: 800px;
+  margin: auto;
+}
+
+.restaurant-detail img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.review-card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.review-form {
+  margin-top: 20px;
+}
+
+.review-form label {
+  display: block;
+  margin: 5px 0;
+}
+
+.review-form input, 
+.review-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.review-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.review-form button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+}
